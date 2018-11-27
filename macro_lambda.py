@@ -130,6 +130,7 @@ def custom_resource_handler(event, context):
 
     if event['RequestType'] == 'Update':
         # Do nothing and send a success immediately
+        response = 'SUCCESS'
         send_response(event, context, response)
         return
 
