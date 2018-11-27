@@ -12,9 +12,6 @@ Parameters:
   VPC:
     Type: AWS::EC2::VPC::Id
     Description: The VPC in which to launch the EC2 instance. We recommend you choose your default VPC.
-  FunctionArn:
-    Type: String
-    Description: The ARN of the lambda function that implements the custom resource and macro
 Resources:
   MyEC2Instance:
     Type: AWS::EC2::Instance
